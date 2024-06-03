@@ -132,5 +132,84 @@ body {
     background-color: #ccc;
   }
   
-  .food-item-card img.circular {
+  /* Carousel.css */
+.carousel-container {
+    padding: 20px; /* Padding around the entire carousel */
   }
+  
+  .slick-slide {
+    padding: 0 10px; /* Padding between slides */
+  }
+  
+  .food-item-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px;
+    position: relative;
+  }
+  
+  .food-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Make image circular */
+  }
+  
+  .food-item-card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .food-item-card p {
+    color: grey; /* Text color for time, calories, and price */
+  }
+  
+  .food-item-card .rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  }
+  
+  .bookmark {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: teal;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  .svgIcon path {
+    stroke-dasharray: 200 0;
+    stroke-dashoffset: 0;
+    stroke: white;
+    fill: #dddddd00;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+  }
+  
+  #checkboxInput:checked ~ .svgIcon path {
+    fill: white;
+    animation: bookmark 0.5s linear;
+    transition-delay: 0.5s;
+  }
+  
+  @keyframes bookmark {
+    0% {
+      stroke-dasharray: 0 200;
+      stroke-dashoffset: 80;
+    }
+    100% {
+      stroke-dasharray: 200 0;
+    }
+  }
+  
