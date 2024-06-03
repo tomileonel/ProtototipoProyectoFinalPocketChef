@@ -1,0 +1,21 @@
+.food-item-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .food-item-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .food-item-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .food-item-card p {
+    margin: 5px 0;
+  }
+  
